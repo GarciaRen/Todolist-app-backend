@@ -6,8 +6,8 @@ const server = require("http").createServer(app);
 const PORT = process.env.PORT;
 const connectDb = require("./mongodb");
 
-// app.use(express.json());
-// app.use(cors({ origin: "https://oyie-todolist.netlify.app/" }));
+app.use(express.json());
+app.use(cors({ origin: "https://oyie-todolist.netlify.app/" }));
 // * connect to the database
 connectDb();
 
