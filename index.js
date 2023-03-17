@@ -17,7 +17,7 @@ app.use(
 connectDb();
 
 // * routes
-app.get("/api/", (_req, res) => {
+app.get("/", (_req, res) => {
   res.status(200).json({ message: "Routes alive" });
 });
 require("./routes")(app);
