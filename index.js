@@ -9,7 +9,7 @@ const connectDb = require("./mongodb");
 app.use(express.json());
 app.use(
   cors({
-    origin: "https://todoapp-be.onrender.com",
+    origin: "https://oyie-todolist.netlify.app/",
     methods: ["GET", "POST", "PUT", "DELETE"],
   })
 );
