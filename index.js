@@ -7,7 +7,12 @@ const PORT = process.env.PORT;
 const connectDb = require("./mongodb");
 
 app.use(express.json());
-app.use(cors({ origin: "https://oyie-todolist.netlify.app/" }));
+app.use(
+  cors({
+    origin: "https://todoapp-be.onrender.com",
+    methods: ["GET", "POST", "PUT", "DELETE"],
+  })
+);
 // * connect to the database
 connectDb();
 
